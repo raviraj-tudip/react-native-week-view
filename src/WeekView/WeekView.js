@@ -491,12 +491,13 @@ export default class WeekView extends Component {
       RefreshComponent,
     } = this.props;
     const { currentMoment, initialDates, windowWidth } = this.state;
-    const times = this.calculateTimes(
-      timeStep,
-      formatTimeLabel,
-      beginAgendaAt,
-      endAgendaAt,
-    );
+    //     const times = this.calculateTimes(
+    //       timeStep,
+    //       formatTimeLabel,
+    //       beginAgendaAt,
+    //       endAgendaAt,
+    //     );
+    const times = ['0:00', '1:00', '2:00', '3:00']; // Added left side labels for events (Forked)
     const eventsByDate = this.sortEventsByDate(events);
     const horizontalInverted =
       (prependMostRecent && !rightToLeft) ||
@@ -510,7 +511,8 @@ export default class WeekView extends Component {
         <View style={styles.headerContainer}>
           <Title
             showTitle={showTitle}
-            style={headerStyle}
+         // style={headerStyle}
+            style={{backgroundColor: '#0271B7'}} // Added custom style for Month/Year (Forked)
             textStyle={headerTextStyle}
             numberOfDays={numberOfDays}
             selectedDate={currentMoment}
