@@ -44,6 +44,7 @@ const Column = ({
       // style={[styles.column, style, { width }]}
       /**
         * Modified the calendra strip color to blue
+        * (Forked)
       */
       style={[styles.column, style, { width, backgroundColor: '#4883DB' }]}
       onPress={() => onDayPress && onDayPress(column, formattedDate)}
