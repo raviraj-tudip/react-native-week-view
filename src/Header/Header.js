@@ -46,7 +46,7 @@ const Column = ({
         * Modified the calendra strip color to blue
         * (Forked)
       */
-      style={[styles.column, style, { width, backgroundColor: '#4883DB' }]}
+      style={[styles.column, style, { width, backgroundColor: '#4883DB',borderColor:'white'}]}
       onPress={() => onDayPress && onDayPress(column, formattedDate)}
       disabled={!onDayPress}
     >
