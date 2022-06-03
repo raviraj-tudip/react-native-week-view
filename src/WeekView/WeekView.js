@@ -511,8 +511,7 @@ export default class WeekView extends Component {
         <View style={styles.headerContainer}>
           <Title
             showTitle={showTitle}
-         // style={headerStyle}
-            style={{backgroundColor: '#0271B7'}} // Added custom style for Month/Year (Forked)
+            style={headerStyle}
             textStyle={headerTextStyle}
             numberOfDays={numberOfDays}
             selectedDate={currentMoment}
