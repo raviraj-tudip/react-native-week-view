@@ -25,6 +25,8 @@ const Title = ({
     return <View style={[styles.title, style]} />;
   }
   const formattedMonth = getCurrentMonth(selectedDate);
+
+  const splitFormatedDate = formattedMonth.split(' ');
   return (
     <TouchableOpacity
       style={[styles.title, { width }, style]}
@@ -40,7 +42,19 @@ const Title = ({
           textStyle,
         ]}
       >
-        {formattedMonth}
+        {splitFormatedDate[0]?.substring(0, 3)}
+      </Text>
+      <Text
+        style={[
+          {
+            fontSize: getFontSizeHeader(numberOfDays),
+            textAlign: 'center',
+            marginTop:2,
+          },
+          textStyle,
+        ]}
+      >
+        {splitFormatedDate[1]}
       </Text>
     </TouchableOpacity>
   );
