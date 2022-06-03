@@ -41,7 +41,11 @@ const Column = ({
 
   return (
     <TouchableOpacity
-      style={[styles.column, style, { width }]}
+      // style={[styles.column, style, { width }]}
+      /**
+        * Modified the calendra strip color to blue
+      */
+      style={[styles.column, style, { width, backgroundColor: '#4883DB' }]}
       onPress={() => onDayPress && onDayPress(column, formattedDate)}
       disabled={!onDayPress}
     >
