@@ -30,11 +30,11 @@ const Times = ({ times, hoursInDisplay, timeStep, textStyle, width }) => {
         :
         time === '2:00'
         ?
-        'Insection Control'
+        'Insect Control'
         :
         time === '3:00'
         &&
-        'Bio Solution'
+        'Bio Solutions'
       }</Text>
       </View>
       ))}
