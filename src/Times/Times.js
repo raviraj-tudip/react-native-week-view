@@ -16,6 +16,7 @@ const Times = ({ times, hoursInDisplay, timeStep, textStyle, width }) => {
       /**
          * Mapped Lables name with time index
          * So, Lable name can be visible to user
+         * (Forked)
          */
         <View key={time} style={[styles.label, { height, justifyContent: 'center', alignItems: 'center', backgroundColor: '#EFEFEF', margin: 2, borderRadius: 4}]}>
         <Text style={[styles.text, textStyle, {transform: [{ rotate: '270deg' }]}, ]}>{
