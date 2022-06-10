@@ -21,7 +21,7 @@ const Times = ({ times, hoursInDisplay, timeStep, textStyle, width }) => {
         // <View key={time} style={[styles.label, { height},   time !== '4:00' && {justifyContent: 'center', alignItems: 'center', backgroundColor: '#EFEFEF', margin: 2, borderRadius: 4}]}>
         // FORKED
         <View key={time} style={[styles.label, { height}, {justifyContent: 'center', alignItems: 'center', backgroundColor: time === '0:00' ? '#7CBE3F' : time === '1:00' ? '#008DE6' : time === '2:00'  ? '#FF8033' : time === '3:00' ? '#F86284' : '#EFEFEF', margin: 2, borderRadius: 4}]}>
-        <Text style={[styles.text, textStyle, {transform: [{ rotate: '270deg' }]}, ]}>{
+         <Text style={[styles.text, textStyle, {transform: [{ rotate: '270deg' }], color: 'white'}, ]}>{
         time === '0:00' 
         ?
         'Weed Control'
