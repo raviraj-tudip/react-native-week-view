@@ -99,8 +99,11 @@ const Event = ({
           left: currentLeft,
           height: position.height,
           width: currentWidth,
-          backgroundColor: event.color,
+          // backgroundColor: event.color, // FORKED
           transform: translatedByDrag.getTranslateTransform(),
+          backgroundColor: event.color,// FORKED
+          borderColor: event.borderColorCode,// FORKED
+          borderWidth:1,// FORKED
         },
         containerStyle,
       ]}
@@ -116,7 +119,9 @@ const Event = ({
         {EventComponent ? (
           <EventComponent event={event} position={position} />
         ) : (
-          <Text style={styles.description}>{event.description}</Text>
+            // <Text style={styles.description}>{event.description}</Text>
+            // FORKED
+             <Text style=[styles.description, {color: event.textColor}]>{event.description}</Text> 
         )}
       </TouchableOpacity>
     </Animated.View>
