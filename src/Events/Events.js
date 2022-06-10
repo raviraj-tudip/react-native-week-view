@@ -294,7 +294,9 @@ class Events extends PureComponent {
               onLongPress={(e) => this.onGridTouch(e, dayIndex, true)}
               key={dayIndex}
             >
-              <View style={[styles.eventsColumn, gridColumnStyle]}>
+                 // <View style={[styles.eventsColumn, gridColumnStyle]}>
+                 // FORKED
+                 <View style={[styles.eventsColumn, gridColumnStyle, {borderLeftWidth:0.5, borderBottomWidth:0}]}>
                 {showNowLine && this.isToday(dayIndex) && (
                   <NowLine
                     color={nowLineColor}
