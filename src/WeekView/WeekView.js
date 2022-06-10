@@ -497,7 +497,7 @@ export default class WeekView extends Component {
     //       beginAgendaAt,
     //       endAgendaAt,
     //     );
-    const times = ['0:00', '1:00', '2:00', '3:00', '4:00']; // Added left side labels for events (Forked)
+    const times = ['0:00', '1:00', '2:00', '3:00']; // Added left side labels for events (Forked)
     const eventsByDate = this.sortEventsByDate(events);
     const horizontalInverted =
       (prependMostRecent && !rightToLeft) ||
